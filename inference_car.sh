@@ -1,0 +1,1 @@
+python3.6 app.py -i /home/david/onlineLearning/AI-at-the-edge/images/blue-car.jpg -t CAR_META -m /home/david/onlineLearning/AI-at-the-edge/models/vehicle-attributes-recognition-barrier-0039.xml -c /home/david/Programs/openvino_2019/deployment_tools/inference_engine/lib/intel64/libcpu_extension_sse4.so 
