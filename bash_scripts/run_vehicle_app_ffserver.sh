@@ -1,0 +1,1 @@
+python3.6 app.py -input videos/test_video_vehicle.mp4 -model models/semantic-segmentation-adas-0001.xml -type ADAS | ffmpeg -v warning -f rawvideo -pixel_format bgr24 -video_size 1280x720 -framerate 25 -i - http://0.0.0.0:3004/fac.ffm

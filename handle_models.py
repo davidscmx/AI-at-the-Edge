@@ -24,7 +24,6 @@ def handle_pose(output, input_shape):
     # return [1,19,750,1000]
     return keypoint_heatmaps_resized
 
-
 def handle_text(output, input_shape):
     '''
     Handles the output of the Text Detection model.
@@ -49,7 +48,6 @@ def handle_text(output, input_shape):
 
     return [sem_output_notext,sem_output_text]
 
-
 def handle_car(output, input_shape):
     '''
     Handles the output of the Car Metadata model.
@@ -60,7 +58,6 @@ def handle_car(output, input_shape):
     type_max_index = np.argmax(output["type"])
     
     return [color_max_index,type_max_index]
-
 
 def handle_output(model_type):
     '''
@@ -76,12 +73,6 @@ def handle_output(model_type):
     else:
         return None
 
-
-'''
-The below function is carried over from the previous exercise.
-You just need to call it appropriately in `app.py` to preprocess
-the input image.
-'''
 def preprocessing(input_image, height, width):
     '''
     Given an input image, height and width:

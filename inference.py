@@ -9,6 +9,7 @@ import sys
 import logging as log
 from openvino.inference_engine import IENetwork, IECore
 
+
 class Network:
     '''
     Load and store information for working with the Inference Engine,
